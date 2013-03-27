@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?><gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="edge" mode="static">
+      <attribute id="4" title="comment" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="nombre_completo" type="string" />
+      <attribute id="1" title="link" type="string" />
+      <attribute id="2" title="nombre_complet" type="string" />
+      <attribute id="3" title="created" type="string" />
+    </attributes>
+    <nodes>
+      <node id="19197603" label="danieladiamond">
+        <attvalues>
+          <attvalue for="0" value="danieladiamond" />
+          <attvalue for="1" value="http://instagram.com/p/XSQsT0KLFR/" />
+        </attvalues>
+      </node>
+      <node id="230996601" label="jonatanespinosa8507">
+        <attvalues>
+          <attvalue for="0" value="jonatanespinosa8507" />
+          <attvalue for="1" value="http://instagram.com/p/XTHNVNmQvt/" />
+        </attvalues>
+      </node>
+      <node id="233711257" label="daisy_kells">
+        <attvalues>
+          <attvalue for="0" value="Daisy" />
+        </attvalues>
+      </node>
+      <node id="322217987" label="jody_sherliin">
+        <attvalues>
+          <attvalue for="0" value="Jody SherLiin Nm" />
+        </attvalues>
+      </node>
+      <node id="19033242" label="mmuedano">
+        <attvalues>
+          <attvalue for="0" value="mmuedano" />
+        </attvalues>
+      </node>
+      <node id="183979024" label="felipe_solorio">
+        <attvalues>
+          <attvalue for="0" value="Felipe Solorio" />
+          <attvalue for="1" value="http://instagram.com/p/XS6rU8PuZN/" />
+        </attvalues>
+      </node>
+      <node id="273641293" label="alexbalan0">
+        <attvalues>
+          <attvalue for="0" value="Balan Alexandru" />
+        </attvalues>
+      </node>
+      <node id="280351308" label="libebvla">
+        <attvalues>
+          <attvalue for="0" value="Mich" />
+          <attvalue for="1" value="http://instagram.com/p/XShw5XlHcu/" />
+        </attvalues>
+      </node>
+      <node id="197518683" label="kristoph04">
+        <attvalues>
+          <attvalue for="0" value="kristoph04" />
+          <attvalue for="1" value="http://instagram.com/p/XSeEDZOZMx/" />
+        </attvalues>
+      </node>
+      <node id="269582510" label="fordstar">
+        <attvalues>
+          <attvalue for="0" value="ford" />
+          <attvalue for="1" value="http://instagram.com/p/XSz6qZpz6i/" />
+        </attvalues>
+      </node>
+      <node id="21235304" label="tallisonica">
+        <attvalues>
+          <attvalue for="0" value="Talli Peanuts" />
+        </attvalues>
+      </node>
+      <node id="184656481" label="cyhrius">
+        <attvalues>
+          <attvalue for="0" value="cyhrius" />
+        </attvalues>
+      </node>
+      <node id="53907525" label="fanirs">
+        <attvalues>
+          <attvalue for="0" value="fanirs" />
+        </attvalues>
+      </node>
+      <node id="222580182" label="ladybug10_">
+        <attvalues>
+          <attvalue for="0" value="Yenni Viera" />
+        </attvalues>
+      </node>
+      <node id="193069916" label="jeanettdr">
+        <attvalues>
+          <attvalue for="0" value="jeanettdr" />
+        </attvalues>
+      </node>
+      <node id="145166143" label="xaf53">
+        <attvalues>
+          <attvalue for="0" value="Xaf" />
+        </attvalues>
+      </node>
+      <node id="71864" label="orlando_elchino_oliveros">
+        <attvalues>
+          <attvalue for="0" value="Orlando Oliveros" />
+          <attvalue for="1" value="http://instagram.com/p/XTBl2BnScv/" />
+        </attvalues>
+      </node>
+      <node id="28750100" label="jeremiaaah">
+        <attvalues>
+          <attvalue for="0" value="Jerome Martin" />
+        </attvalues>
+      </node>
+      <node id="209426667" label="cristinagulias">
+        <attvalues>
+          <attvalue for="0" value="Cristina" />
+        </attvalues>
+      </node>
+      <node id="13604140" label="gardugno">
+        <attvalues>
+          <attvalue for="0" value="Julio Gardugno" />
+        </attvalues>
+      </node>
+      <node id="249051745" label="saabiineess">
+        <attvalues>
+          <attvalue for="0" value="saabiineess" />
+        </attvalues>
+      </node>
+      <node id="3747781" label="fotomiau">
+        <attvalues>
+          <attvalue for="0" value="Mauricio Meyrán" />
+          <attvalue for="1" value="http://instagram.com/p/XTGZ5zq3pf/" />
+        </attvalues>
+      </node>
+      <node id="329667684" label="kixremiremd">
+        <attvalues>
+          <attvalue for="2" value="kixremiremd" />
+          <attvalue for="3" value="1364226200" />
+        </attvalues>
+      </node>
+      <node id="217042307" label="aznar89">
+        <attvalues>
+          <attvalue for="0" value="Aznar" />
+        </attvalues>
+      </node>
+      <node id="11425927" label="daltontony">
+        <attvalues>
+          <attvalue for="0" value="Tony Dalton" />
+          <attvalue for="1" value="http://instagram.com/p/XSy7UXDoPh/" />
+        </attvalues>
+      </node>
+      <node id="13105328" label="chuyrmz">
+        <attvalues>
+          <attvalue for="0" value="Chuy Ramirez" />
+          <attvalue for="1" value="http://instagram.com/p/XS70vLBSYZ/" />
+        </attvalues>
+      </node>
+      <node id="21586820" label="rikkitrikki_romero">
+        <attvalues>
+          <attvalue for="0" value="RikK Romero" />
+        </attvalues>
+      </node>
+      <node id="254810244" label="jesckuhh">
+        <attvalues>
+          <attvalue for="0" value="JESICVTIRVJOH" />
+        </attvalues>
+      </node>
+      <node id="330761149" label="scarletpeke">
+        <attvalues>
+          <attvalue for="0" value="scArlEt" />
+          <attvalue for="1" value="http://instagram.com/p/XS9xgqkfkL/" />
+        </attvalues>
+      </node>
+      <node id="232598480" label="cassgeminni">
+        <attvalues>
+          <attvalue for="0" value="Tony Hernandez" />
+          <attvalue for="1" value="http://instagram.com/p/XSbvLFtmWz/" />
+        </attvalues>
+      </node>
+      <node id="287993441" label="lizzylarkwhistle">
+        <attvalues>
+          <attvalue for="0" value="Lizzy" />
+        </attvalues>
+      </node>
+      <node id="189573019" label="ophirye">
+        <attvalues>
+          <attvalue for="0" value="Ophir Yerushalmy" />
+        </attvalues>
+      </node>
+      <node id="45607677" label="stefanii21">
+        <attvalues>
+          <attvalue for="0" value="fanii" />
+        </attvalues>
+      </node>
+      <node id="25109335" label="majuuska">
+        <attvalues>
+          <attvalue for="0" value="majuuska" />
+        </attvalues>
+      </node>
+      <node id="241545371" label="adyitzel">
+        <attvalues>
+          <attvalue for="2" value="adyitzel" />
+          <attvalue for="0" value="adyitzel" />
+          <attvalue for="3" value="1364242842" />
+        </attvalues>
+      </node>
+      <node id="253653983" label="cornishsurfinggranny">
+        <attvalues>
+          <attvalue for="0" value="karen cole" />
+        </attvalues>
+      </node>
+      <node id="331435772" label="joshelavoz">
+        <attvalues>
+          <attvalue for="0" value="JosHe la Voz" />
+          <attvalue for="1" value="http://instagram.com/p/XTC_jLjBS-/" />
+        </attvalues>
+      </node>
+      <node id="249617276" label="xoxdiiabliito">
+        <attvalues>
+          <attvalue for="0" value="diiabliito" />
+        </attvalues>
+      </node>
+      <node id="268745501" label="ana_muradas">
+        <attvalues>
+          <attvalue for="0" value="AnaRosa Muradas" />
+          <attvalue for="1" value="http://instagram.com/p/XSgDOTB9q1/" />
+        </attvalues>
+      </node>
+      <node id="23637584" label="lizi2314">
+        <attvalues>
+          <attvalue for="0" value="Elizabeth" />
+        </attvalues>
+      </node>
+      <node id="188492815" label="lauruchix">
+        <attvalues>
+          <attvalue for="0" value="Laura" />
+        </attvalues>
+      </node>
+      <node id="199148356" label="tiiny_isgorgeous">
+        <attvalues>
+          <attvalue for="0" value="*Giselle's Mommy*" />
+        </attvalues>
+      </node>
+      <node id="173791034" label="tathybahan">
+        <attvalues>
+          <attvalue for="0" value="tathybahan" />
+        </attvalues>
+      </node>
+      <node id="11836882" label="rosarioloera">
+        <attvalues>
+          <attvalue for="0" value="Rosario Loera" />
+        </attvalues>
+      </node>
+      <node id="300232010" label="alainsin">
+        <attvalues>
+          <attvalue for="0" value="Alain Sinuhé Labaki" />
+          <attvalue for="1" value="http://instagram.com/p/XTB2FNn21Q/" />
+        </attvalues>
+      </node>
+      <node id="305250517" label="r1lupiita">
+        <attvalues>
+          <attvalue for="0" value="Lupita Sanchez" />
+        </attvalues>
+      </node>
+      <node id="40777302" label="airamsilzeuqzalev">
+        <attvalues>
+          <attvalue for="0" value="maria lis velazquez" />
+        </attvalues>
+      </node>
+      <node id="32023864" label="favan">
+        <attvalues>
+          <attvalue for="2" value="favan" />
+          <attvalue for="3" value="1364225340" />
+        </attvalues>
+      </node>
+      <node id="191383477" label="catherinebaba">
+        <attvalues>
+          <attvalue for="0" value="catherinebaba" />
+        </attvalues>
+      </node>
+      <node id="177473734" label="samantharabon">
+        <attvalues>
+          <attvalue for="0" value="S A M A N T H A RABON" />
+        </attvalues>
+      </node>
+      <node id="334883594" label="jhonie27">
+        <attvalues>
+          <attvalue for="0" value="Jonathan" />
+          <attvalue for="1" value="http://instagram.com/p/XSnGzIOC2z/" />
+        </attvalues>
+      </node>
+      <node id="299137261" label="chewii17">
+        <attvalues>
+          <attvalue for="0" value="chewii17" />
+        </attvalues>
+      </node>
+      <node id="328753155" label="luisbarrerin">
+        <attvalues>
+          <attvalue for="0" value="luisbarrerin" />
+        </attvalues>
+      </node>
+      <node id="254014927" label="saraijerameel">
+        <attvalues>
+          <attvalue for="0" value="sarai" />
+          <attvalue for="1" value="http://instagram.com/p/XS236szQCK/" />
+        </attvalues>
+      </node>
+      <node id="302841556" label="no_voicee">
+        <attvalues>
+          <attvalue for="0" value="mynameiscatiee" />
+        </attvalues>
+      </node>
+      <node id="51425489" label="hectoraguilarg">
+        <attvalues>
+          <attvalue for="0" value="Hector Aguilar Garcia" />
+        </attvalues>
+      </node>
+      <node id="276154090" label="ssamuelbenitezz">
+        <attvalues>
+          <attvalue for="0" value="Samuel Benitez" />
+        </attvalues>
+      </node>
+      <node id="201735579" label="photolover06">
+        <attvalues>
+          <attvalue for="0" value="Sonia Luz" />
+        </attvalues>
+      </node>
+      <node id="3463224" label="vbystrova">
+        <attvalues>
+          <attvalue for="0" value="Vita" />
+        </attvalues>
+      </node>
+      <node id="14222098" label="mizzjay_x3">
+        <attvalues>
+          <attvalue for="0" value="Jocelyn. 💋" />
+        </attvalues>
+      </node>
+      <node id="272551560" label="mvpic12">
+        <attvalues>
+          <attvalue for="0" value="mvpic12" />
+        </attvalues>
+      </node>
+      <node id="259107885" label="_beatsfastbasslow">
+        <attvalues>
+          <attvalue for="0" value="Karla Muñoz" />
+        </attvalues>
+      </node>
+      <node id="41836039" label="alicedominyk">
+        <attvalues>
+          <attvalue for="0" value="alicedominyk" />
+        </attvalues>
+      </node>
+      <node id="319857678" label="maricerveza">
+        <attvalues>
+          <attvalue for="0" value="Maricela M. Arzate" />
+        </attvalues>
+      </node>
+      <node id="50316790" label="miguel_alvarado">
+        <attvalues>
+          <attvalue for="0" value="miguel_alvarado" />
+        </attvalues>
+      </node>
+      <node id="293854515" label="jr_scarratt">
+        <attvalues>
+          <attvalue for="0" value="Jamie Scarratt" />
+        </attvalues>
+      </node>
+      <node id="275800969" label="ale_bonetta">
+        <attvalues>
+          <attvalue for="0" value="alejandra" />
+        </attvalues>
+      </node>
+      <node id="247334584" label="dougray7">
+        <attvalues>
+          <attvalue for="0" value="Doug" />
+          <attvalue for="1" value="http://instagram.com/p/XSPhw9x6Ym/" />
+        </attvalues>
+      </node>
+      <node id="183938595" label="shel_castellanos">
+        <attvalues>
+          <attvalue for="0" value="Karen Elizabeth" />
+        </attvalues>
+      </node>
+      <node id="34928328" label="yosonson">
+        <attvalues>
+          <attvalue for="2" value="Eileen Mantilla 🐘" />
+          <attvalue for="0" value="Eileen Mantilla 🐘" />
+          <attvalue for="1" value="http://instagram.com/p/XSw2hyNAT1/" />
+          <attvalue for="3" value="1364242981" />
+        </attvalues>
+      </node>
+      <node id="240842812" label="carlitos0121">
+        <attvalues>
+          <attvalue for="0" value="Carlos" />
+        </attvalues>
+      </node>
+      <node id="311582299" label="lordbetty">
+        <attvalues>
+          <attvalue for="0" value="Federico Pellejero" />
+          <attvalue for="1" value="http://instagram.com/p/XS_R2-o_O7/" />
+        </attvalues>
+      </node>
+      <node id="42813885" label="_bitterswe3t_">
+        <attvalues>
+          <attvalue for="0" value="Trangyy🌺" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="daisy_kells" target="dougray7" />
+      <edge id="1" source="jody_sherliin" target="libebvla" />
+      <edge id="2" source="mmuedano" target="alainsin" />
+      <edge id="3" source="alexbalan0" target="ana_muradas" />
+      <edge id="4" source="tallisonica" target="daltontony" />
+      <edge id="5" source="cyhrius" target="daltontony" />
+      <edge id="6" source="fanirs" target="saraijerameel" />
+      <edge id="7" source="ladybug10_" target="yosonson" />
+      <edge id="8" source="jeanettdr" target="dougray7" />
+      <edge id="9" source="xaf53" target="kristoph04" />
+      <edge id="10" source="jeremiaaah" target="chuyrmz" />
+      <edge id="11" source="jeremiaaah" target="ana_muradas" />
+      <edge id="12" source="cristinagulias" target="ana_muradas" />
+      <edge id="13" source="gardugno" target="daltontony" />
+      <edge id="14" source="saabiineess" target="dougray7" />
+      <edge id="15" source="kixremiremd" target="dougray7">
+        <attvalues>
+          <attvalue for="4" value="theres a good site called instapopz com you can use it get followers" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="aznar89" target="ana_muradas" />
+      <edge id="17" source="rikkitrikki_romero" target="daltontony" />
+      <edge id="18" source="jesckuhh" target="yosonson" />
+      <edge id="19" source="scarletpeke" target="scarletpeke" />
+      <edge id="20" source="lizzylarkwhistle" target="dougray7" />
+      <edge id="21" source="ophirye" target="dougray7" />
+      <edge id="22" source="stefanii21" target="kristoph04" />
+      <edge id="23" source="majuuska" target="dougray7" />
+      <edge id="24" source="adyitzel" target="yosonson">
+        <attvalues>
+          <attvalue for="4" value="Que parte de mx??" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="cornishsurfinggranny" target="dougray7" />
+      <edge id="26" source="xoxdiiabliito" target="yosonson" />
+      <edge id="27" source="lizi2314" target="daltontony" />
+      <edge id="28" source="lauruchix" target="kristoph04" />
+      <edge id="29" source="tiiny_isgorgeous" target="yosonson" />
+      <edge id="30" source="tathybahan" target="ana_muradas" />
+      <edge id="31" source="rosarioloera" target="daltontony" />
+      <edge id="32" source="r1lupiita" target="ana_muradas" />
+      <edge id="33" source="airamsilzeuqzalev" target="daltontony" />
+      <edge id="34" source="favan" target="dougray7">
+        <attvalues>
+          <attvalue for="4" value="" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="catherinebaba" target="fordstar" />
+      <edge id="36" source="samantharabon" target="fordstar" />
+      <edge id="37" source="chewii17" target="ana_muradas" />
+      <edge id="38" source="luisbarrerin" target="saraijerameel" />
+      <edge id="39" source="no_voicee" target="ana_muradas" />
+      <edge id="40" source="hectoraguilarg" target="ana_muradas" />
+      <edge id="41" source="ssamuelbenitezz" target="saraijerameel" />
+      <edge id="42" source="photolover06" target="yosonson" />
+      <edge id="43" source="vbystrova" target="dougray7" />
+      <edge id="44" source="mizzjay_x3" target="yosonson" />
+      <edge id="45" source="mvpic12" target="dougray7" />
+      <edge id="46" source="_beatsfastbasslow" target="yosonson" />
+      <edge id="47" source="alicedominyk" target="daltontony" />
+      <edge id="48" source="maricerveza" target="danieladiamond" />
+      <edge id="49" source="miguel_alvarado" target="ana_muradas" />
+      <edge id="50" source="jr_scarratt" target="dougray7" />
+      <edge id="51" source="ale_bonetta" target="daltontony" />
+      <edge id="52" source="shel_castellanos" target="daltontony" />
+      <edge id="53" source="yosonson" target="yosonson">
+        <attvalues>
+          <attvalue for="4" value="@adyitzel" />
+        </attvalues>
+      </edge>
+      <edge id="54" source="carlitos0121" target="yosonson" />
+      <edge id="55" source="_bitterswe3t_" target="yosonson" />
+    </edges>
+  </graph>
+</gexf>

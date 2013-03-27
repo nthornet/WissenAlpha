@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//Includes/__init__.py=windows-1252
+encoding/Dock.py=utf-8
+encoding/OAuth.py=utf-8
+encoding/TwitterSearch.py=utf-8
+encoding/UI.py=utf-8
+encoding/extract_tweet_entities.py=utf-8

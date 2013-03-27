@@ -1,0 +1,33 @@
+[
+	{
+		"lugar":"queretaro"
+	},
+	{
+		"lugar": periferico
+		
+	},
+	{
+		"lugar":
+		
+	},
+	{
+		"lugar":
+		
+	},
+	{
+		"lugar":
+		
+	},
+	{
+		"lugar":
+		
+	},
+	{
+		"lugar":
+		
+	},
+	{
+		"lugar":
+		
+	},
+]

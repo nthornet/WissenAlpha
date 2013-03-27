@@ -1,0 +1,67 @@
+[
+	{
+		"original":[
+					"qro"
+				   ],
+		"changeTo":"queretaro"
+	},
+	{
+		"original":[
+					"peri",
+					"periférico"
+					],
+		"changeTo":"periferico"
+	},
+	{
+		"original":[
+					"insgts sur"
+					],
+		"changeTo":"insurgentes sur"
+	},
+	{
+		"original":[
+					"Revolución"
+					],
+		"changeTo":"Revolucion"
+	},
+	{
+		"original":[
+						"Benjamín Franklin"
+					]
+		"changeTo":	Benjamin Franklin
+	},
+	{
+		"original":[
+						"Sn Antonio"
+					]
+		"changeTo":"San Antonio"
+	},
+	{
+		"original":
+		"changeTo":
+	},
+	{
+		"original":
+		"changeTo":
+	},
+	{
+		"original":
+		"changeTo":
+	},
+	{
+		"original":
+		"changeTo":
+	},
+	{
+		"original":
+		"changeTo":
+	},
+	{
+		"original":
+		"changeTo":
+	},
+	{
+		"original":
+		"changeTo":
+	},
+]

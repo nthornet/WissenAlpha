@@ -1,0 +1,55 @@
+[
+	{
+		"original":"qro",
+		"changeTo":"queretaro"
+	},
+	{
+		"original":"",
+		"changeTo":"palmas"
+	},
+	{
+		"original":"",
+		"changeTo":"reforma"
+	},
+	{
+		"original":"periferico",
+		"changeTo":"periférico"
+	},
+	{
+		"original":"peri",
+		"changeTo":"periférico"
+	},
+	{
+		"original":"periferico sur",
+		"changeTo":"periférico sur"
+	},
+	{
+		"original":"periferico norte",
+		"changeTo":"periférico norte"
+	},
+	{
+		"original":"insgts sur",
+		"changeTo":"insurgentes sur"
+	},
+	{
+		"original":"Revolucion",
+		"changeTo":"Revolución"
+	},
+	{
+		"original":"Benjamín Franklin",
+		"changeTo":	"Benjamin Franklin"
+	},
+	{
+		"original":"Sn Antonio",
+		"changeTo":"San Antonio"
+	},
+	{
+		"original":"dist heberto castillo",
+		"changeTo":"distribuidor heberto castillo"
+	},
+	{
+		"original":"Viaducto bicentenario",
+		"changeTo":"Viaducto Elevado Bicentenario"
+	}
+	
+]
