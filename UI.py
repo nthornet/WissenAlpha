@@ -188,7 +188,7 @@ class Twitter_menu:
         if isinstance(loaded_data, str):
             loaded_data=json.loads(loaded_data)
             try:
-                count_json,count=freq_counter(json.loads(loaded_data))
+                count_json,count=freq_counter([loaded_data])
             except Exception as e:
                 if "expected string or buffer" in e:
                     print "Contador de frequencias recibe un string: No se guardo el csv"
