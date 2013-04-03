@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="texto" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="name" type="string" />
+      <attribute id="1" title="location" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Os_23" label="Os_23" />
+      <node id="MiFuturaEsposa" label="MiFuturaEsposa">
+        <attvalues>
+          <attvalue for="0" value="Escribiendo..." />
+          <attvalue for="1" value="México" />
+        </attvalues>
+      </node>
+      <node id="NessElNegrito" label="NessElNegrito">
+        <attvalues>
+          <attvalue for="0" value="Néstor Martínez" />
+          <attvalue for="1" value="Cuauhtepec, México, DF." />
+        </attvalues>
+      </node>
+      <node id="anibalzuga" label="anibalzuga">
+        <attvalues>
+          <attvalue for="0" value="Zuñiga 300..." />
+          <attvalue for="1" value="En algún lugar..." />
+        </attvalues>
+      </node>
+      <node id="tonioedgar" label="tonioedgar">
+        <attvalues>
+          <attvalue for="0" value="Edgar" />
+          <attvalue for="1" value="San Mateo Ixt. Cuautitlan Mex." />
+        </attvalues>
+      </node>
+      <node id="Rom_JS" label="Rom_JS">
+        <attvalues>
+          <attvalue for="0" value="Josue Romero ™" />
+          <attvalue for="1" value="Mexico " />
+        </attvalues>
+      </node>
+      <node id="jeslancaster" label="jeslancaster" />
+      <node id="MariieCueva" label="MariieCueva">
+        <attvalues>
+          <attvalue for="0" value="Salo de Mé" />
+          <attvalue for="1" value="En el semaforo de la 5y10 - Tj" />
+        </attvalues>
+      </node>
+      <node id="Cynalanine" label="Cynalanine">
+        <attvalues>
+          <attvalue for="0" value="Cynthia Hernández" />
+          <attvalue for="1" value="Distrito Federal, México." />
+        </attvalues>
+      </node>
+      <node id="Dramalessia" label="Dramalessia">
+        <attvalues>
+          <attvalue for="0" value="Aless in Wonderland♡" />
+          <attvalue for="1" value="Lejos." />
+        </attvalues>
+      </node>
+      <node id="Carrogua" label="Carrogua">
+        <attvalues>
+          <attvalue for="0" value="César  Arroyo " />
+          <attvalue for="1" value="México DF" />
+        </attvalues>
+      </node>
+      <node id="Ntoniio" label="Ntoniio">
+        <attvalues>
+          <attvalue for="0" value="Antonio Arias" />
+          <attvalue for="1" value="19.619847,-99.197739" />
+        </attvalues>
+      </node>
+      <node id="susanamavich" label="susanamavich">
+        <attvalues>
+          <attvalue for="0" value="A.H.O." />
+          <attvalue for="1" value="Saint Barts" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="anibalzuga" target="MiFuturaEsposa">
+        <attvalues>
+          <attvalue for="2" value="RT @MiFuturaEsposa: Nada peor que la infidelidad, bueno si, una CocaCola caliente." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="MariieCueva" target="Os_23">
+        <attvalues>
+          <attvalue for="2" value="@Os_23 #CocaCola" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Carrogua" target="jeslancaster">
+        <attvalues>
+          <attvalue for="2" value="@jeslancaster bigcola ?? Acabas de perderme ... CocaCola ligth de 600 y puede que sea tuyo de nuevo" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
