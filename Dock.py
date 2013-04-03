@@ -16,9 +16,6 @@ import Includes.xlwt as xlwt
 from datetime import datetime
 import Includes.pytz as pytz
 
-
-from UI import display_menu
-
 class Tweet:
 
     def __init__(self, 
@@ -277,7 +274,11 @@ def loadJsons(paths):
 def createProject(files):
     pass
 
-
+def to_unicode(obj, encoding='utf-8'):
+    if isinstance(obj, basestring):
+        if not isinstance(obj, unicode):
+            obj = unicode(obj, encoding)
+            return obj
 
 def create_folders(path):
     if not os.path.isdir(path+'/out'):
@@ -295,6 +296,16 @@ def create_folders(path):
         
 def read_project(prt_file):
     pass
+
+def display_menu(menu,output=1):
+    for option in menu:
+        print '[%i] %s' % (option, menu[option]) 
+        # Prompt the user
+    if output==1:
+        idx = int(raw_input('\nEscoge una Funcion: '))
+    elif output==2:
+        idx = raw_input('\nEscoge una Funcion: ')
+    return idx
 
 def unescape(s):
     s = s.replace("&lt;", "<")
@@ -350,6 +361,21 @@ def insta_json_csv(results, type):
         for result in results:
             print result
 
+def csv_tweet_inner (element, output, index_r, index_c, sheet):
+    tweet_holder=Tweet()
+    tweet_holder.load_json(element)
+    for attr, value in tweet_holder.__dict__.iteritems(): #itterate over variables and their values
+        if attr is 'mention' and value is not None:    
+            for user in value:
+                output+="Screen Name: %s, Nombres Real: %s , " %(user['to_sn'],user['to_name'])
+            value=output
+            output=""
+        sheet.write(index_r,index_c,value)
+        index_c+=1
+    index_c=0
+    index_r+=1
+    return output, index_r, index_c, sheet
+        
 def json_csv_xlwt(input_json,type,proyecto,path):
     if type=="user": #prepara el json de usuarios para convertitlo en xls
         wbk = xlwt.Workbook()
@@ -427,20 +453,13 @@ def json_csv_xlwt(input_json,type,proyecto,path):
         index_c=0
         index_r+=1
         output="" # needed for elements with lists-------------------------------------------------------------------------------
-        for search in input_json:   
-            for element in search:
-                tweet_holder=Tweet()
-                tweet_holder.load_json(element)
-                for attr, value in tweet_holder.__dict__.iteritems(): #itterate over variables and their values
-                    if attr is 'mention' and value is not None:    
-                        for user in value:
-                            output+="Screen Name: %s, Nombres Real: %s , " %(user['to_sn'],user['to_name'])
-                        value=output
-                        output=""
-                    sheet.write(index_r,index_c,value)
-                    index_c+=1
-                index_c=0
-                index_r+=1
+        for search in input_json:
+            if isinstance(search,dict):
+                output, index_r, index_c,sheet= csv_tweet_inner(search,output,index_r,index_c,sheet)
+            else:   
+                for element in search:
+                    output, index_r, index_c,sheet= csv_tweet_inner(search,output,index_r,index_c,sheet)
+                
         wbk.save(csv_file)             
     elif type=="freq_count": #prepara la lista de frequencias de palabras para pasar a xls
         wbk = xlwt.Workbook()

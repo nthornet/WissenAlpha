@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Created on Feb 12, 2013
 
@@ -8,6 +9,7 @@ import datetime
 import Includes.instagram  as instagram
 from Includes.instagram import client, subscriptions
 import json
+from Dock import to_unicode
 from SNA_Mod import create_insta_likes_graph as create_likes_graph
 from SNA_Mod import save_to_gexf, create_insta_friends_graph as create_friends_graph
 from Includes.instagram.oauth2 import OAuth2AuthExchangeError
@@ -30,16 +32,25 @@ def save_json(results,query):
     f.write(json.dumps(results, indent=1))
     f.close()
     
-    
-def friends_network(levels,api,media,graph=None):
+def getCursor(link):
+    if "cursor=" in link:
+        start=link.find('cursor=')
+        end=link.find('&')
+        return link[start+len('cursor='):end]
+
+
+def friends_network(levels,api,media,friends_graph=None):
     #creates the network with the levels specified  
     user_id =media['user']['id']
     try:
         friends, next=api.user_followed_by(user_id)
-        if graph:
-            friends_graph=create_friends_graph(media['user'],friends,graph)
-        else:
-            friends_graph=create_friends_graph(media['user'],friends)
+        while next:
+            cursor_next=getCursor(next)
+            if friends_graph:
+                friends_graph=create_friends_graph(media['user'],friends,friends_graph)
+            else:
+                friends_graph=create_friends_graph(media['user'],friends)
+            friends, next=api.user_followed_by(user_id, cursor=cursor_next)
         return friends_graph,friends
     except Exception as e:
         return e

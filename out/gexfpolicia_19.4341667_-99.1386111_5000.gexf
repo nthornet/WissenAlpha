@@ -38,6 +38,11 @@
           <attvalue for="1" value="http://instagram.com/p/Xm1TwSPqcD/" />
         </attvalues>
       </node>
+      <node id="fan_ys" label="fan_ys">
+        <attvalues>
+          <attvalue for="0" value="Fan-y Sánchez" />
+        </attvalues>
+      </node>
       <node id="deni_80" label="deni_80">
         <attvalues>
           <attvalue for="0" value="&lt;---- 💙Bitch Please ...!! :3" />
@@ -236,6 +241,11 @@
       <node id="mariasn" label="mariasn">
         <attvalues>
           <attvalue for="0" value="mariasn" />
+        </attvalues>
+      </node>
+      <node id="vidaortega" label="vidaortega">
+        <attvalues>
+          <attvalue for="0" value="Vida Ortega Font" />
         </attvalues>
       </node>
       <node id="sombradelmar" label="sombradelmar">
@@ -483,110 +493,112 @@
       <edge id="0" source="raulitzdelaarena" target="raulitzdelaarena" />
       <edge id="1" source="casstorres" target="viviguerrero" />
       <edge id="2" source="vale_lpzg" target="gabycluna" />
-      <edge id="3" source="deni_80" target="itzee_biebs" />
-      <edge id="4" source="k_blakesley" target="cmcchris" />
-      <edge id="5" source="imonse_" target="itzee_biebs" />
-      <edge id="6" source="ace_perkins" target="viviguerrero">
+      <edge id="3" source="fan_ys" target="davihds" />
+      <edge id="4" source="deni_80" target="itzee_biebs" />
+      <edge id="5" source="k_blakesley" target="cmcchris" />
+      <edge id="6" source="imonse_" target="itzee_biebs" />
+      <edge id="7" source="ace_perkins" target="viviguerrero">
         <attvalues>
           <attvalue for="4" value="👍👍sweet shot" />
         </attvalues>
       </edge>
-      <edge id="7" source="misaelleos" target="cmcchris" />
-      <edge id="8" source="lalombriz06" target="lalombriz06" />
-      <edge id="9" source="paoolin" target="viviguerrero" />
-      <edge id="10" source="dessoxd" target="ivanolakase" />
-      <edge id="11" source="fernyvondoll" target="corranq" />
-      <edge id="12" source="godfather331" target="corranq">
+      <edge id="8" source="misaelleos" target="cmcchris" />
+      <edge id="9" source="lalombriz06" target="lalombriz06" />
+      <edge id="10" source="paoolin" target="viviguerrero" />
+      <edge id="11" source="dessoxd" target="ivanolakase" />
+      <edge id="12" source="fernyvondoll" target="corranq" />
+      <edge id="13" source="godfather331" target="corranq">
         <attvalues>
           <attvalue for="4" value="Wow" />
         </attvalues>
       </edge>
-      <edge id="13" source="chbc01" target="viviguerrero" />
-      <edge id="14" source="teeheenaty" target="ivanolakase" />
-      <edge id="15" source="lilisqui" target="cmcchris" />
-      <edge id="16" source="zebas_miller" target="sammlr" />
-      <edge id="17" source="iam_alice_" target="davihds" />
-      <edge id="18" source="albertolegacy" target="sammlr" />
-      <edge id="19" source="_morefans_d127707" target="cmcchris" />
-      <edge id="20" source="janelloww" target="ivanolakase" />
-      <edge id="21" source="xat0409" target="viviguerrero" />
-      <edge id="22" source="soulemarie" target="davihds" />
-      <edge id="23" source="__c_r_e_a_m__" target="mariellecel" />
-      <edge id="24" source="cokilb" target="viviguerrero" />
-      <edge id="25" source="fertyr32" target="fertyr32" />
-      <edge id="26" source="oherik" target="corranq" />
-      <edge id="27" source="marioeherrera" target="viviguerrero" />
-      <edge id="28" source="lilipalet" target="viviguerrero" />
-      <edge id="29" source="otomenyappy" target="alvarrock1" />
-      <edge id="30" source="jaqkeea" target="itzee_biebs" />
-      <edge id="31" source="caritoosmile" target="itzee_biebs" />
-      <edge id="32" source="jalex_ha" target="itzee_biebs" />
-      <edge id="33" source="santosmatt" target="viviguerrero" />
-      <edge id="34" source="shadgonzales7444" target="oscar_moar" />
-      <edge id="35" source="sorcierebleu" target="produccioneselsalariodelmiedo" />
-      <edge id="36" source="mariasn" target="viviguerrero" />
-      <edge id="37" source="sombradelmar" target="davihds" />
-      <edge id="38" source="dhalms" target="cmcchris" />
-      <edge id="39" source="davihds" target="davihds">
+      <edge id="14" source="chbc01" target="viviguerrero" />
+      <edge id="15" source="teeheenaty" target="ivanolakase" />
+      <edge id="16" source="lilisqui" target="cmcchris" />
+      <edge id="17" source="zebas_miller" target="sammlr" />
+      <edge id="18" source="iam_alice_" target="davihds" />
+      <edge id="19" source="albertolegacy" target="sammlr" />
+      <edge id="20" source="_morefans_d127707" target="cmcchris" />
+      <edge id="21" source="janelloww" target="ivanolakase" />
+      <edge id="22" source="xat0409" target="viviguerrero" />
+      <edge id="23" source="soulemarie" target="davihds" />
+      <edge id="24" source="__c_r_e_a_m__" target="mariellecel" />
+      <edge id="25" source="cokilb" target="viviguerrero" />
+      <edge id="26" source="fertyr32" target="fertyr32" />
+      <edge id="27" source="oherik" target="corranq" />
+      <edge id="28" source="marioeherrera" target="viviguerrero" />
+      <edge id="29" source="lilipalet" target="viviguerrero" />
+      <edge id="30" source="otomenyappy" target="alvarrock1" />
+      <edge id="31" source="jaqkeea" target="itzee_biebs" />
+      <edge id="32" source="caritoosmile" target="itzee_biebs" />
+      <edge id="33" source="jalex_ha" target="itzee_biebs" />
+      <edge id="34" source="santosmatt" target="viviguerrero" />
+      <edge id="35" source="shadgonzales7444" target="oscar_moar" />
+      <edge id="36" source="sorcierebleu" target="produccioneselsalariodelmiedo" />
+      <edge id="37" source="mariasn" target="viviguerrero" />
+      <edge id="38" source="vidaortega" target="paulinaurreta" />
+      <edge id="39" source="sombradelmar" target="davihds" />
+      <edge id="40" source="dhalms" target="cmcchris" />
+      <edge id="41" source="davihds" target="davihds">
         <attvalues>
           <attvalue for="4" value="#LoveOfLesbian" />
         </attvalues>
       </edge>
-      <edge id="40" source="corranq" target="corranq">
+      <edge id="42" source="corranq" target="corranq">
         <attvalues>
           <attvalue for="4" value="Esta increíble la oficina de Correos la verdad :-)" />
         </attvalues>
       </edge>
-      <edge id="41" source="lizdonaldson11" target="cmcchris" />
-      <edge id="42" source="cheliuzz" target="fertyr32" />
-      <edge id="43" source="ginnimenor7_7" target="itzee_biebs" />
-      <edge id="44" source="lupishernandez" target="cmcchris" />
-      <edge id="45" source="lgromo" target="alvarrock1" />
-      <edge id="46" source="mickey_mouch425" target="cmcchris">
+      <edge id="43" source="lizdonaldson11" target="cmcchris" />
+      <edge id="44" source="cheliuzz" target="fertyr32" />
+      <edge id="45" source="ginnimenor7_7" target="itzee_biebs" />
+      <edge id="46" source="lupishernandez" target="cmcchris" />
+      <edge id="47" source="lgromo" target="alvarrock1" />
+      <edge id="48" source="mickey_mouch425" target="cmcchris">
         <attvalues>
           <attvalue for="4" value="cute na kau mouse?! go to @Sistcofa For More gals To Following you" />
         </attvalues>
       </edge>
-      <edge id="47" source="vicky_vs" target="itzee_biebs" />
-      <edge id="48" source="karenbeca" target="karenbeca" />
-      <edge id="49" source="armandohaco" target="chinisss" />
-      <edge id="50" source="astriidmorenoo" target="sammlr" />
-      <edge id="51" source="lakatpower" target="cmcchris" />
-      <edge id="52" source="paulchicharo" target="davihds" />
-      <edge id="53" source="soph_hr" target="viviguerrero" />
-      <edge id="54" source="turespiracion" target="davihds" />
-      <edge id="55" source="kiweejuice" target="raulitzdelaarena" />
-      <edge id="56" source="habacucs" target="cmcchris" />
-      <edge id="57" source="xonitos" target="corranq" />
-      <edge id="58" source="shaeaguirre" target="sammlr" />
-      <edge id="59" source="adrianaarteaga13" target="gabycluna" />
-      <edge id="60" source="sr_brownstone" target="itzee_biebs" />
-      <edge id="61" source="joassefcast" target="itzee_biebs" />
-      <edge id="62" source="daniiinfinitylove" target="itzee_biebs" />
-      <edge id="63" source="elperfildelatostada" target="davihds" />
-      <edge id="64" source="oscar_moar" target="oscar_moar">
+      <edge id="49" source="vicky_vs" target="itzee_biebs" />
+      <edge id="50" source="karenbeca" target="karenbeca" />
+      <edge id="51" source="armandohaco" target="chinisss" />
+      <edge id="52" source="astriidmorenoo" target="sammlr" />
+      <edge id="53" source="lakatpower" target="cmcchris" />
+      <edge id="54" source="paulchicharo" target="davihds" />
+      <edge id="55" source="soph_hr" target="viviguerrero" />
+      <edge id="56" source="turespiracion" target="davihds" />
+      <edge id="57" source="kiweejuice" target="raulitzdelaarena" />
+      <edge id="58" source="habacucs" target="cmcchris" />
+      <edge id="59" source="xonitos" target="corranq" />
+      <edge id="60" source="shaeaguirre" target="sammlr" />
+      <edge id="61" source="adrianaarteaga13" target="gabycluna" />
+      <edge id="62" source="sr_brownstone" target="itzee_biebs" />
+      <edge id="63" source="joassefcast" target="itzee_biebs" />
+      <edge id="64" source="daniiinfinitylove" target="itzee_biebs" />
+      <edge id="65" source="elperfildelatostada" target="davihds" />
+      <edge id="66" source="oscar_moar" target="oscar_moar">
         <attvalues>
           <attvalue for="4" value="#df #mexicocity" />
         </attvalues>
       </edge>
-      <edge id="65" source="pausitac_" target="corranq">
+      <edge id="67" source="pausitac_" target="corranq">
         <attvalues>
           <attvalue for="4" value="Hermosa foto!!" />
         </attvalues>
       </edge>
-      <edge id="66" source="kanghoon8" target="corranq" />
-      <edge id="67" source="brettk19" target="cmcchris" />
-      <edge id="68" source="sammlr" target="sammlr" />
-      <edge id="69" source="ndrws" target="davihds" />
-      <edge id="70" source="jonathanlms" target="sammlr" />
-      <edge id="71" source="luian_tunz" target="sammlr" />
-      <edge id="72" source="viviguerrero" target="viviguerrero">
+      <edge id="68" source="kanghoon8" target="corranq" />
+      <edge id="69" source="brettk19" target="cmcchris" />
+      <edge id="70" source="sammlr" target="sammlr" />
+      <edge id="71" source="ndrws" target="davihds" />
+      <edge id="72" source="jonathanlms" target="sammlr" />
+      <edge id="73" source="luian_tunz" target="sammlr" />
+      <edge id="74" source="viviguerrero" target="viviguerrero">
         <attvalues>
           <attvalue for="4" value="Thank You 😉 @ace_perkins" />
         </attvalues>
       </edge>
-      <edge id="73" source="fherfranco86" target="corranq" />
-      <edge id="74" source="alepalestino" target="alvarrock1">
+      <edge id="75" source="fherfranco86" target="corranq" />
+      <edge id="76" source="alepalestino" target="alvarrock1">
         <attvalues>
           <attvalue for="4" value="👌" />
         </attvalues>

@@ -42,8 +42,15 @@
   "type": "image", 
   "id": "425408277691366820_17854990", 
   "likes": {
-   "count": 0, 
-   "data": []
+   "count": 1, 
+   "data": [
+    {
+     "username": "vidaortega", 
+     "profile_picture": "http://images.instagram.com/profiles/profile_49030201_75sq_1355858189.jpg", 
+     "id": "49030201", 
+     "full_name": "Vida Ortega Font"
+    }
+   ]
   }
  }, 
  {
@@ -1198,7 +1205,7 @@
   "type": "image", 
   "id": "425020618984489145_18174703", 
   "likes": {
-   "count": 7, 
+   "count": 8, 
    "data": [
     {
      "username": "turespiracion", 
@@ -1211,6 +1218,12 @@
      "profile_picture": "http://images.instagram.com/profiles/profile_316003554_75sq_1362244617.jpg", 
      "id": "316003554", 
      "full_name": "Paul Ch\u00edcharo"
+    }, 
+    {
+     "username": "fan_ys", 
+     "profile_picture": "http://images.instagram.com/profiles/profile_327798503_75sq_1364656470.jpg", 
+     "id": "327798503", 
+     "full_name": "Fan-y S\u00e1nchez"
     }, 
     {
      "username": "iam_alice_", 

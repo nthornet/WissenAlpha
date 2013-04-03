@@ -64,7 +64,7 @@ def cargar_json(files):
                     files[count]=os.path.join(dirname, filename)
         proyecto=raw_input("\nComo se llama tu proyecto?")
         print "escoger todos los archivos que quiera cargar separados por coma"
-        user_input=display_menu(files,output=2)
+        user_input=Dock.display_menu(files,output=2)
         print user_input
         input_split=user_input.split(",")
         paths=[]
@@ -73,15 +73,7 @@ def cargar_json(files):
         loaded_data=Dock.combine_json(paths)
 
 
-def display_menu(menu,output=1):
-    for option in menu:
-        print '[%i] %s' % (option, menu[option]) 
-        # Prompt the user
-    if output==1:
-        idx = int(raw_input('\nEscoge una Funcion: '))
-    elif output==2:
-        idx = raw_input('\nEscoge una Funcion: ')
-    return idx
+
 
 class Instagram_menu:
     def main_menu(self):
@@ -89,7 +81,7 @@ class Instagram_menu:
         ids=[]
         print "-----------------Menu Instagram-------------------"
         main_menu={1:"Buscar",2:"Cargar Red Desde Json"}
-        user_input=display_menu(main_menu)
+        user_input=Dock.display_menu(main_menu)
         if main_menu[user_input]=="Buscar":
             insta_results,insta_friends_json,geo= self.buscar()
         elif main_menu[user_input]=="Cargar Red Desde Json":
@@ -127,7 +119,7 @@ class Twitter_menu:
         ids=[]
         print "-----------------Menu Twitter-------------------"
         main_menu={1:"Buscar",2:"Cargar Red Desde Json"}
-        user_input=display_menu(main_menu)
+        user_input=Dock.display_menu(main_menu)
         if main_menu[user_input]=="Buscar":
             data,proyecto,geo= self.buscar()
         elif main_menu[user_input]=="Cargar Red Desde Json":
@@ -176,7 +168,7 @@ class Twitter_menu:
                     files[id]=os.path.join(dirname, filename)
         proyecto=raw_input("\nComo se llama tu proyecto?")
         print "escoger todos los archivos que quiera cargar separados por coma"
-        user_input=display_menu(files,output=2)
+        user_input=Dock.display_menu(files,output=2)
         print user_input
         input_split=user_input.split(",")
         paths=[]
@@ -223,7 +215,7 @@ class Twitter_menu:
 if __name__ == '__main__':
     Dock.create_folders(os.path.dirname(sys.argv[0]))
     main_menu={1:"Twitter",2:"Instagram"}
-    user_input=display_menu(main_menu)
+    user_input=Dock.display_menu(main_menu)
     if main_menu[user_input] is 'Twitter':
         tweet_menu=Twitter_menu()
         tweet_menu.main_menu()

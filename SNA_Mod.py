@@ -1,3 +1,5 @@
+
+# -*- coding: utf-8 -*-
 '''
 Created on Nov 24, 2012
 
@@ -29,30 +31,44 @@ def entity_count_mapper(tweet):
     for ele in tweet:
         print ele
         
+def create_graph_inner(result,g):
+    try:
+        g.add_node(result['user']['screen_name'], 
+                   name=result['user']['name'],
+                   location=result['user']['location'])
+    except Exception,e:
+        if 'location' in e:
+            try:
+                g.add_node(result['user']['screen_name'], 
+                           name=result['user']['name'], 
+                           location= result['user']['time_zone'])
+            except Exception as e:
+                
+                if 'location' in e:
+                    g.add_node(result['user']['screen_name'], 
+                               name=result['user']['name'])
+                    
+    if "user_mentions" in result:
+        try:
+            for user in result["user_mentions"]:
+                g.add_edge(result['user']['screen_name'],user["screen_name"],texto=result["text"])
+        except Exception as e:
+            print e
+            
+    if 'retweet' in result:
+        print 'here'
         
+    return g
+    
+    
 def create_graph(results_input):
     g=net.DiGraph()
     for results in results_input:
-        for result in results:
-            try:
-                g.add_node(result['user']['screen_name'], 
-                           name=result['user']['name'],
-                           location=result['user']['location'])
-            except Exception,e:
-                if 'location' in e:
-                    try:
-                        g.add_node(result['user']['screen_name'], 
-                                   name=result['user']['name'], 
-                                   location= result['user']['time_zone'])
-                    except Exception as e:
-                        if 'location' in e:
-                            g.add_node(result['user']['screen_name'], 
-                                   name=result['user']['name'])
-            if "user_mentions" in result:
-                for user in result["user_mentions"]:
-                    g.add_edge(result['user']['screen_name'],user["screen_name"],texto=result["text"])
-            if 'retweet' in result:
-                print 'here'
+        if not isinstance(results,dict):
+            for result in results:
+                create_graph_inner(result,g)
+        else:
+            create_graph_inner(results,g)
             
     return g                        
 
@@ -124,17 +140,23 @@ def create_insta_likes_graph(results):
     g=net.DiGraph()
     for result in results:
         try:
-            g.add_node(result['user']['username'], nombre_completo=result['user']['full_name'],id=result['user']['id'],link=result['link'])
+            g.add_node(result['user']['username'], nombre_completo=result['user']['full_name'],link=result['link'])
         except Exception as e:
             print e
         if result['likes']['count']>0:
             for like in result['likes']['data']:
-                g.add_node(like['username'], nombre_completo=like['full_name'],id=like['id'])
-                g.add_edge(like['username'],result['user']['username'])
+                try:
+                    g.add_node(like['username'], nombre_completo=like['full_name'])
+                    g.add_edge(like['username'],result['user']['username'])
+                except UnicodeDecodeError as e:
+                    print e
         if result['comments']['count']>0:
             for comment in result['comments']['data']:
-                g.add_edge(comment['from']['username'],result['user']['username'],comment=comment['text'].encode("utf8","ignore"))
-                g.add_node(comment['from']['username'], dict(nombre_complet=comment['from']['full_name'],id=comment['from']['id']),created=comment['created_time'])
+                try:
+                    g.add_edge(comment['from']['username'],result['user']['username'],comment=comment['text'])
+                    g.add_node(comment['from']['username'], dict(nombre_completo=comment['from']['full_name'],user_num=comment['from']['id'],created=comment['created_time']))
+                except UnicodeDecodeError as e:
+                    print e
     return g
 
 
@@ -143,10 +165,10 @@ def create_insta_friends_graph(parent, friends, graph=None):
         g=graph
     else:
         g=net.DiGraph()
-    g.add_node(parent['username'],nombre_completo=parent['full_name'],id=parent['id'])
+    g.add_node(parent['username'],nombre_completo=parent['full_name'])
     for friend in friends:
         g.add_edge(parent['username'],friend['username'])
-        g.add_node(friend['username'],nombre_completo=friend['full_name'],id=friend['id'])
+        g.add_node(friend['username'],nombre_completo=friend['full_name'])
     return g
        
 #def calculate_triads(results,day_start):
