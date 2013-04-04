@@ -107,14 +107,13 @@ class Tweet:
                 self.from_name=json['user']['name']
             if json['user']['screen_name']:
                 self.from_sn=json['user']['screen_name']
-            if json['user']['created_at']:
-                self.creado=self.fix_time(json['user']['created_at'])
             if json['user']['lang']:
                 self.idioma=json['user']['lang']
             if json['user']['protected']:
                 self.protected=json['user']['protected']
                 
-                
+        if json['created_at']:
+            self.creado=self.fix_time(json['created_at'])
 
 class User:
     def __init__(self, 

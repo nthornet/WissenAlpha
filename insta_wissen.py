@@ -58,8 +58,12 @@ def friends_network(levels,api,media,friends_graph=None):
     
 def insta_search(search,geo):
     save=True
-    lugar= geo.split(',')
-    query=search+'_'+lugar[0]+'_'+lugar[1]+'_'+lugar[2]
+    if geo:
+        lugar= geo.split(',')
+        query=search+'_'+lugar[0]+'_'+lugar[1]+'_'+lugar[2]
+    else:
+        lugar= None
+    
     
     unauthenticated_api = client.InstagramAPI(**CONFIG)
     try:
@@ -84,7 +88,10 @@ def insta_search(search,geo):
                 print "cant get user media"
     except OAuth2AuthExchangeError as e:
         print e
-    insta_results = unauthenticated_api.media_search(q=search, lat=lugar[0], lng=lugar[1], distance=lugar[2])
+    if lugar:
+        insta_results = unauthenticated_api.media_search(q=search, lat=lugar[0], lng=lugar[1], distance=lugar[2])
+    else:
+        insta_results = unauthenticated_api.media_search(q=search)
         #add processing to get user info
     save_json(insta_results,query)
     friends_json= post_processing(insta_results,unauthenticated_api,query)

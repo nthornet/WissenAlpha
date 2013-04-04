@@ -101,7 +101,10 @@ class Instagram_menu:
                       'La golocalizacion es de la siguiente manera latitude,longitude,radio en metros \n'+
                       'por ejempo para mexico df con un radio de una milla seria 19.4341667,-99.1386111,5000 : ')
         if geo is "":
-            geo=None
+            print "la Busqueda se tiene que hacer con geocodigo"
+            geo=raw_input('\nSi te gustaria agregar un codigo de geolocalizacion agreguelo aqui si no dejelo en blanco. \n'+
+                      'La golocalizacion es de la siguiente manera latitude,longitude,radio en metros \n'+
+                      'por ejempo para mexico df con un radio de una milla seria 19.4341667,-99.1386111,5000 : ')
         proyecto=raw_input("\nComo se llama tu proyecto?")
         
         insta_results,insta_friends_json=insta_search(query,geo)
