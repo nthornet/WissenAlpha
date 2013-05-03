@@ -75,6 +75,11 @@ def cargar_json(files):
 
 
 
+class Timer:
+    def __init__(self,searches,stop, begin):
+        self.searcher=searches
+
+
 class Instagram_menu:
     def main_menu(self):
         geo=None
@@ -112,8 +117,8 @@ class Instagram_menu:
         
     def process(self,insta_results,insta_friends_json):
         
-        Dock.insta_json_csv(insta_results,type='like')
-        Dock.insta_json_csv(insta_friends_json,'friends')
+        Dock.csv_instagram(insta_results,input_type='like')
+        Dock.csv_instagram(insta_friends_json,input_type='friends')
         
         
 class Twitter_menu:
@@ -204,14 +209,10 @@ class Twitter_menu:
         Dock.json_csv_xlwt(count_json,"freq_count",proyecto,csv_path)
         if geo != "":
             gexf_filename='search_results_'+proyecto+'_'+geo+'.gexf'
-            graphml_filename='search_results_'+proyecto+'_'+geo
             save_to_gexf(graph,gexf_path+'/'+gexf_filename)
-            save_to_graphml(graph,gexf_path+'/'+graphml_filename)
         else:
             gexf_filename='search_results_'+proyecto+'.gexf'
-            graphml_filename='search_results_'+proyecto
             save_to_gexf(graph,gexf_path+'/'+gexf_filename)   
-            save_to_graphml(graph,gexf_path+'/'+graphml_filename)
          
         
         

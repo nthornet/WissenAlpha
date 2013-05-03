@@ -54,7 +54,7 @@ class Tweet:
         local = pytz.timezone ("America/Mexico_City")
         if '+0000' in date: 
             date=date.replace(' +0000','')
-        naive = datetime.strptime (date, "%a %b %d %H:%M:%S %Y")
+        naive = datetime.strptime (date, "%a, %d %b %Y %H:%M:%S")
         naive=naive.replace(tzinfo=pytz.utc).astimezone(local)
         return naive.strftime('%d %b %Y %H:%M:%S')
         
@@ -188,26 +188,29 @@ class Instagram:
     def __init__(self, 
                  creado=None, 
                  descripcion=None, 
-                 favoritos=None, 
-                 followers=None,  
-                 friends= None,
-                 lenguaje=None,
-                 lugar=None,
-                 nombre=None,
-                 screen_name=None,
-                 status=None,
-                 protected=None):
+                 comments=None, 
+                 image=None,  
+                 likes= None,
+                 link=None,
+                 location=None,
+                 tags=None,
+                 user=None):
         self.creado=creado
         self.descripcion=descripcion
-        self.favoritos=favoritos
-        self.followers=followers
-        self.friends=friends
-        self.lenguaje=lenguaje
-        self.lugar=lugar
-        self.nombre=nombre
-        self.screen_name=screen_name
-        self.status=status
-        self.protected=protected
+        self.comments=comments
+        self.image=image 
+        self.likes= likes
+        self.link=link
+        self.location=location
+        self.tags=tags
+        self.user=user
+        
+        
+    def load_json(self,jsonInsta):
+        for element in jsonInsta:
+            if 'created_time' in element:
+                self.creado= element['created_time']
+        print jsonInsta
     
     
 class Instagram_User:
@@ -229,6 +232,14 @@ def find_users(input_json):
     return users
         
 
+def csv_instagram(input_json, input_type):
+    if input_type=='like':
+        instagram= Instagram()
+        loaded=instagram.load_json(input_json)
+    elif input_type=='friends':
+        instagram= Instagram_User()
+        loaded=instagram.load_json(input_json)
+    
 
 def loadJsons(paths):
     output=[]
@@ -351,14 +362,6 @@ def user_csv(tweets):
         except Exception as e:
             print e
     return lst_out
-            
-def insta_json_csv(results, type):
-    if type is 'friends':
-        for result in results:
-            print result
-    elif type is 'like':
-        for result in results:
-            print result
 
 def csv_tweet_inner (element, output, index_r, index_c, sheet):
     tweet_holder=Tweet()
@@ -457,7 +460,7 @@ def json_csv_xlwt(input_json,type,proyecto,path):
                 output, index_r, index_c,sheet= csv_tweet_inner(search,output,index_r,index_c,sheet)
             else:   
                 for element in search:
-                    output, index_r, index_c,sheet= csv_tweet_inner(search,output,index_r,index_c,sheet)
+                    output, index_r, index_c,sheet= csv_tweet_inner(element,output,index_r,index_c,sheet)
                 
         wbk.save(csv_file)             
     elif type=="freq_count": #prepara la lista de frequencias de palabras para pasar a xls

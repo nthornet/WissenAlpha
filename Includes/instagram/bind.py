@@ -85,7 +85,8 @@ def bind_method(**config):
                 del self.parameters[name]
 
                 self.path = self.path.replace(variable, value)
-            self.path = self.path + '.%s' % self.api.format
+            #self.path = self.path + '.%s' % self.api.format
+            self.path = self.path
 
         def _do_api_request(self, url, method="GET", body=None, headers=None):
             headers = headers or {}

@@ -19,7 +19,10 @@ CONFIG = {
     'client_secret': '18f82125712848488034def45511c8c9',
     'redirect_uri': 'https://www.wissenmedia.com'
 }
-
+path=os.path.join(os.path.dirname(sys.argv[0]), 'out')
+gexf_path=os.path.join(os.path.dirname(sys.argv[0]), 'out/gexf')
+json_path=os.path.join(os.path.dirname(sys.argv[0]), 'out/json')
+csv_path=os.path.join(os.path.dirname(sys.argv[0]), 'out/csv')
 
 def save_json(results,query):
     now = datetime.datetime.now()
@@ -53,7 +56,9 @@ def friends_network(levels,api,media,friends_graph=None):
             friends, next=api.user_followed_by(user_id, cursor=cursor_next)
         return friends_graph,friends
     except Exception as e:
-        return e
+        if 'not valid JSON' in e:
+            print 'Hubo un error con el json pero se ha continuado con la operacion'
+        friends_graph,friends
   
     
 def insta_search(search,geo):
@@ -100,15 +105,21 @@ def insta_search(search,geo):
     
 def post_processing(insta_results, unauthenticated_api,query):
     friends_graph=None
+    friends_json=None
     #Dock.insta_json_csv(insta_results, type='likes')
     graph= create_likes_graph(insta_results)
-    save_to_gexf(graph,os.path.join(os.path.dirname(sys.argv[0])+'/out/gexf'+query+'.gexf'))
+    gexf_filename='search_results_'+query+'.gexf'
+    save_to_gexf(graph,gexf_path+'/'+gexf_filename)
     for media in insta_results:
         if friends_graph:
-            friends_graph,friends_json=friends_network(1,unauthenticated_api,media,graph=friends_graph)
+            try:
+                friends_graph,friends_json=friends_network(1,unauthenticated_api,media,friends_graph=friends_graph)
+            except Exception as e:
+                print e
         else:
             friends_graph,friends_json=friends_network(1,unauthenticated_api,media)
-    save_to_gexf(friends_graph,os.path.join(os.path.dirname(sys.argv[0])+'/out/gexf'+query+'_friends.gexf'))
+    gexf_filename='search_results_'+query+'_friends.gexf'
+    save_to_gexf(graph,gexf_path+'/'+gexf_filename)
     return friends_json
     #Dock.insta_json_csv(friends_json, type='friends')
 #        users, next=unauthenticated_api.user_followed_by(media.user.id)

@@ -38,6 +38,7 @@ def save_json(results,query):
 #page_search is set to 15 so the while loop exits
 
 def search_twitter(query, geocode, api):
+    # pages_search tells max pages per search
     pages_search=15
     search_results={}
     page_search=1
@@ -47,12 +48,15 @@ def search_twitter(query, geocode, api):
             try:
                 rate_limit=api.GetRateLimitStatus()
                 if rate_limit['remaining_hits']>=50:
-                    search_results= api.GetSearch(query,
-                                              geocode,per_page=50, 
-                                              page= page_search,
-                                              result_type='recent',
-                                              include_entities=True, 
-                                              query_users=True)
+                    try:
+                        search_results= api.GetSearch(query,
+                                                      geocode,per_page=50, 
+                                                      page= page_search,
+                                                      result_type='recent',
+                                                      include_entities=True, 
+                                                      query_users=True)
+                    except Exception as e:
+                        print e
                 else:
                     print 'Ya se ha llegado al limite de busquedas, espere una hora'
                 result_len=len(search_results)
@@ -62,13 +66,16 @@ def search_twitter(query, geocode, api):
         else:
             rate_limit=api.GetRateLimitStatus()
             if rate_limit['remaining_hits']>=50:
-                search_results+= api.GetSearch(query,
-                                           geocode,
-                                           per_page=50, 
-                                           page= page_search, 
-                                           result_type='recent', 
-                                           include_entities=True, 
-                                           query_users=True)
+                try:
+                    search_results+= api.GetSearch(query,
+                                                   geocode,
+                                                   per_page=50, 
+                                                   page= page_search, 
+                                                   result_type='recent', 
+                                                   include_entities=True, 
+                                                   query_users=True)
+                except Exception as e:
+                    print e
             else:
                 print 'Ya se ha llegado al limite de busquedas, espere una hora'
             if result_len is len(search_results):
